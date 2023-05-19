@@ -14,8 +14,8 @@
 <body>
     <section class="contact">
         <div class="content">
-            <h2>Contact Us</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe quos illum, explicabo magni,
+            <h2 id="contact us">Contact Us</h2>
+            <p id="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe quos illum, explicabo magni,
                 sed aliquid incidunt eius omnis beatae et similique quisquam
                 laboriosam quidem dolorem a laudantium consequatur inventore ipsam!</p>
         </div>
@@ -24,16 +24,16 @@
                 <div class="box">
                     <div class="text">
                         <h3>
-                            <i class="fa fa-map-marker" ></i>
+                            <i class="fa fa-map-marker"></i>
                             Address
                         </h3>
-                        <p>Hotel Serena,<br>Bali,Akwa,<br>02154</p>
+                        <p id="address">Hotel Serena,<br>Bali,Akwa,<br>02154</p>
                     </div>
                 </div>
                 <div class="box">
                     <div class="text">
-                        <h3>
-                            <i class="fa fa-phone" ></i>
+                        <h3 id="phone">
+                            <i class="fa fa-phone"></i>
                             Phone
                         </h3>
                         <p>676 88 22 08</p>
@@ -42,42 +42,46 @@
                 <div class="box">
                     <div class="text">
                         <h3>
-                            <i class="fa fa-envelope" ></i>
+                            <i class="fa fa-envelope"></i>
                             Email
                         </h3>
                         <p>laure@gmail.com</p>
                     </div>
                 </div>
             </div>
-            <div class="contactForm">
-                <form class="email" action="https://formsubmit.co/6dec10a4cb894ff8775a1747e08ff02c" method="post">
-                    <!--HoneyPot-->
-                    <input type="text" name="_honey" style="display: none;">
-                    <!--Disable captcha-->
-                    <input type="hidden" name="_captcha" value="false">
-
-                    <input type="hidden" name="_next" value="https://formsubmit.co/form/submission/Success.html">
-                    <h2>Send Message</h2>
+            <div id="form" class="contactForm">
+                
+                <form class="email" > <div id="modal"></div>
+                    <h2 id="Msg">Send Message</h2>
 
                     <div class="inputBox">
-                        <input type="text" name="" name="name" required="required">
-                        <label>Full name</label>
+                        <input id="Nm" type="text"  name="name" placeholder="Jane" required="required">
+                        <label id="name">Full name</label>
                     </div>
                     <div class="inputBox">
-                        <input type="text" name="" name="email" required="required">
+                        <input id="email" type="email"  name="email" placeholder="Jane@gmail.com" required="required">
                         <label>Email</label>
                     </div>
                     <div class="inputBox">
-                        <input type="text" name="" name="comments,&nbsp; questions" required="required">
-                        <label>Type your message...</label>
+                        <input id="msge" type="text" placeholder="Jane is tired" required="required">
+                        <label id="message">Type your message...</label>
                     </div>
                     <div class="inputBox">
-                        <input type="submit" name="" value="Send">
+                        <input type="submit"  id="snd" value="Send">
                     </div>
             </div>
+           
             </form>
+            
+        </div>
+       
+        <div id="lang">
+            
+            <button id="eng">ENG</button>
+            <button id="fr">FR</button>
         </div>
     </section>
+    <script src="main.js"></script>
 </body>
 
 </html>
